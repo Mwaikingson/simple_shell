@@ -119,7 +119,7 @@ int _fork_fun(char **arg, char **av, char **env, char *lineptr, int np, int c)
 		return (1);
 	for (z = 0; z < lsh_num_builtins(); z++)
 	{
-		if (_strcmp(arg[0], builtin_str[z]) == 0)
+		if (strcmp(arg[0], builtin_str[z]) == 0)
 			return (builtin_func[z](arg));
 	}
 	child = fork();
