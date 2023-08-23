@@ -31,7 +31,7 @@ char **tokenize(char *lineptr)
 
 	for (o = 0; token != NULL; o++)
 	{
-		user_command[i] = token;
+		user_command[o] = token;
 		token = strtok(NULL, " \n\t\r");
 	}
 	user_command[o] = NULL;
