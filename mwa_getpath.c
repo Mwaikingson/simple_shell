@@ -29,3 +29,19 @@ char *_get_path(char **env)
 	path[count] = '\0';
 	return (path);
 }
+
+/* Custom STRING COMPARISON function */
+
+size_t _strncmp(char *string7, char *string8, size_t n) {
+    size_t z;
+
+    for (z = 0; z < n; z++) {
+        if (string7[z] != string8[z]) {
+            return (unsigned char)string7[z] - (unsigned char)string8[z];
+        }
+        if (string7[z] == '\0') {
+            return 0;  /* Reached the END of string7 */
+        }
+    }
+    return 0;  /*STRINGS are equal up to n chars */
+}

@@ -12,7 +12,7 @@
 #include <unistd.h>
 
 
-size_t _strncmp(char *s1, char *s2, size_t n);
+size_t _strncmp(char *string7, char *string8, size_t n);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 char *_strcat(char *dest, char *src);
@@ -22,12 +22,12 @@ int lsh_cd(char **args);
 int lsh_help(char **args);
 extern char **environ;
 int lsh_exit(char **args);
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *string7, char *string8);
 
 
 void _exit_command(char **args, char *lineptr, int _exit);
 int _fork_fun(char **arg, char **av, char **env,
-char *lineptr, int np, int c);
+char *liNptr, int np, int c);
 char *_get_path(char **env);
 int _values_path(char **arg, char **env);
 char *_getline_command(void);

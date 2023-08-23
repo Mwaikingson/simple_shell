@@ -20,3 +20,22 @@ void _getenv(char **env)
 		z++;
 	}
 }
+
+/**
+ * _strlen - Calculate the LENGTH of a STRING..
+ *
+ * @s: The INPUT STRING..
+ *
+ * RETURN: The LENGTH OF THE string..
+ */
+
+int _strlen(char *s)
+
+{
+    int z = 0;
+    while (s[z] != '\0')
+    {
+        z++;
+    }
+    return z;
+}
