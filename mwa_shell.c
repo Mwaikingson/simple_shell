@@ -50,3 +50,13 @@ int main(int ac, char **av, char **env)
 	}
 	return (status);
 }
+
+/* Add the IMPLEMENTATION of _strcmp HERE */
+
+int _strcmp(char *string7, char *string8) {
+    while (*string7 && *string8 && *string7 == *string8) {
+        string7++;
+        string8++;
+    }
+    return (*string7 - *string8);
+}
